@@ -12,7 +12,7 @@ site_theme               : "default" # The available themes options are "default
 title                    : "LYU Hui's Academic Pages"
 title_separator          : "-"
 name                     : &name "Hui LYU"
-description              : &description "Ph.D candidate at Hokkaido University"   # Update this with a general description of your site, this is the default if not overridden by a page
+description              : &description "Ph.D. candidate in behavioral neurobiology at Hokkaido University"   # Update this with a general description of your site, this is the default if not overridden by a page
 url                      : https://romegumi.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -24,13 +24,13 @@ repository               : "romegumi/romegumi.github.io"
 author:
   # Biographic information
   avatar           : "profile.jpg"
-  name             : "Hui LYU (吕 惠)"
+  name             : "Hui LYU"
   pronouns         : "she/her"
-  bio              : "Ph.D candidate"
+  bio              : "Ph.D. candidate"
   location         : "Sapporo, Japan"
   employer         : "Hokkaido University"
   uri              : # URL
-  email            : "romegumi[at]hotmail.com" 
+  email            : "romegumi@hotmail.com" 
 
   # Academic websites
   academia         : # URL
@@ -84,12 +84,8 @@ author:
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
-  books:
-    title: 'Books'
   manuscripts:
-    title: 'Journal Articles'    
-  conferences:
-    title: 'Conference Papers'
+    title: 'Publications'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews
