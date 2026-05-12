@@ -1,0 +1,284 @@
+/* ==========================================================================
+   HOME PAGE
+   ========================================================================== */
+
+.home-modern {
+  color: var(--global-text-color);
+
+  a {
+    color: var(--global-link-color);
+    font-weight: 600;
+    text-decoration: none;
+
+    &:hover {
+      color: var(--global-link-color-hover);
+      text-decoration: underline;
+    }
+  }
+}
+
+.page__content .home-modern {
+  h1,
+  h2,
+  h3,
+  p,
+  li {
+    font-family: $sans-serif;
+  }
+
+  h2 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 1.45rem;
+    letter-spacing: 0;
+  }
+
+  h3 {
+    margin: 0 0 0.35rem;
+    font-size: 1.05rem;
+    line-height: 1.35;
+  }
+
+  p,
+  li {
+    font-size: 0.95rem;
+    line-height: 1.65;
+  }
+}
+
+.home-hero {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border: 1px solid var(--global-border-color);
+  border-radius: 8px;
+  background: var(--global-bg-color);
+
+  h1 {
+    margin: 0 0 0.8rem;
+    font-size: 2.35rem;
+    line-height: 1.1;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.home-kicker {
+  margin-bottom: 0.6rem;
+  color: var(--global-link-color);
+  font-size: 0.78rem !important;
+  font-weight: 700;
+  letter-spacing: 0.06em !important;
+  text-transform: uppercase;
+}
+
+.home-lead {
+  font-size: 1.08rem !important;
+  line-height: 1.65 !important;
+}
+
+.home-section {
+  margin: 2.25rem 0;
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.65rem;
+  border-bottom: 1px solid var(--global-border-color);
+}
+
+.section-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  flex: 0 0 2rem;
+  border-radius: 50%;
+  color: #fff;
+  background: var(--global-link-color);
+  font-size: 0.9rem;
+}
+
+.timeline-list {
+  position: relative;
+  display: grid;
+  gap: 1rem;
+
+  &::before {
+    position: absolute;
+    top: 0.5rem;
+    bottom: 0.5rem;
+    left: 7.15rem;
+    width: 2px;
+    background: var(--global-border-color);
+    content: "";
+  }
+}
+
+.timeline-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 6.4rem minmax(0, 1fr);
+  gap: 1.5rem;
+  align-items: start;
+
+  &::before {
+    position: absolute;
+    top: 0.45rem;
+    left: 6.88rem;
+    width: 0.62rem;
+    height: 0.62rem;
+    border: 3px solid var(--global-link-color);
+    border-radius: 50%;
+    background: var(--global-bg-color);
+    content: "";
+    z-index: 1;
+  }
+}
+
+.timeline-date,
+.honor-year,
+.news-item time,
+.pub-badge {
+  color: var(--global-link-color);
+  font-family: $sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.timeline-card,
+.publication-card,
+.honor-item,
+.service-card,
+.research-card,
+.news-item {
+  border: 1px solid var(--global-border-color);
+  border-radius: 8px;
+  background: var(--global-bg-color);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+}
+
+.timeline-card {
+  padding: 1rem 1.15rem;
+
+  p {
+    margin-bottom: 0.35rem;
+  }
+}
+
+.muted {
+  color: var(--global-text-color-light);
+}
+
+.research-grid,
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.research-card,
+.service-card {
+  padding: 1.05rem 1.15rem;
+}
+
+.research-card > i {
+  margin-bottom: 0.7rem;
+  color: var(--global-link-color);
+  font-size: 1.2rem;
+}
+
+.news-list,
+.publication-list,
+.honor-list {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.news-item {
+  display: grid;
+  grid-template-columns: 5.4rem minmax(0, 1fr);
+  gap: 1rem;
+  padding: 0.9rem 1rem;
+  align-items: start;
+
+  p {
+    margin: 0;
+  }
+}
+
+.publication-card {
+  padding: 1rem 1.15rem;
+
+  .pub-badge {
+    display: inline-block;
+    margin-bottom: 0.55rem;
+    padding: 0.18rem 0.55rem;
+    border-radius: 999px;
+    background: rgba(45, 115, 170, 0.12);
+  }
+
+  p {
+    margin-bottom: 0.35rem;
+  }
+}
+
+.honor-item {
+  display: grid;
+  grid-template-columns: 5.4rem minmax(0, 1fr);
+  gap: 1rem;
+  padding: 0.95rem 1rem;
+
+  p {
+    margin: 0;
+  }
+}
+
+.service-card {
+  ul {
+    margin: 0;
+    padding-left: 1.1rem;
+  }
+
+  li {
+    margin-bottom: 0.35rem;
+  }
+}
+
+@include breakpoint(max-width $small) {
+  .home-hero {
+    padding: 1.1rem;
+
+    h1 {
+      font-size: 1.9rem;
+    }
+  }
+
+  .timeline-list::before {
+    left: 0.31rem;
+  }
+
+  .timeline-item {
+    grid-template-columns: 1fr;
+    gap: 0.4rem;
+    padding-left: 1.7rem;
+
+    &::before {
+      left: 0;
+    }
+  }
+
+  .research-grid,
+  .service-grid,
+  .news-item,
+  .honor-item {
+    grid-template-columns: 1fr;
+    gap: 0.45rem;
+  }
+}
